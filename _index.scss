@@ -1,0 +1,243 @@
+//////////////////////////////
+// Unique Font Styles
+//////////////////////////////
+a {
+    color: $text-color;
+    text-decoration: none;
+    text-shadow: none;
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+.subtitle {
+    @include subtitle;
+}
+
+.paragraphtitle {
+    @include paragraphtitle
+    margin-top: 1.5em;
+}
+
+.guild-guide {
+    @include breakpoint(sm) {
+        margin-top: 1em;
+        font-size: 2.25rem;
+    }
+}
+
+ul li {
+    font-size: $body;
+    font-weight: normal;
+    line-height: 1.25em;
+    list-style: none;
+    margin-bottom: .5em;
+    padding: 0;
+}
+
+.dark {
+    background-color: $background-dark;
+    .subtitle {
+        color: $cerulean-50;
+    }
+    .subtitle {
+        color: #ffffff;
+    }
+    .paragraphtitle {
+        color: $text-color-dark;
+    }
+    p {
+        color: $white;
+    }
+    a {
+        color: $link-color-dark;
+        &:hover {
+            color: $link-hover-color-dark;
+        }
+    }
+}
+
+.splash {
+    text-align: center;
+    padding: 32px 0;
+    a {
+        text-decoration: underline;
+    }
+    p {
+        font-family: $helvetica;
+        font-size: 1.4375rem;
+        line-height: 1.5em;
+        margin: .2em 0;
+        padding-bottom: .2em;
+    }
+    .the-playbook {
+        font-size: 6em;
+        color: #ffffff;
+        font-weight: bold;
+        font-weight: 600;
+    }
+    @include breakpoint(sm) {
+        height: 220px;
+        p {
+            font-size: 1em;
+            line-height: 2em;
+            margin: 0em 1em;
+            margin-top: -45px;
+        }
+        .the-playbook {
+            display: none;
+        }
+    }
+}
+
+//////////////////////////////
+// Layout
+//////////////////////////////
+.section {
+    padding: 2em 0px;
+    @include flexbox;
+    @include flex-direction(column);
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(sm) {
+        @include flex-direction(row);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.section-child {
+    flex-wrap: nowrap;
+    width: 960px;
+    margin: auto;
+    @include breakpoint(sm) {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.layout-column-container {
+    @include flexbox;
+    @include flex-direction(row);
+    @include breakpoint(sm) {
+        @include flex-direction(column);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.layout-column-child {
+    padding-right: 20px;
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    @include breakpoint(sm) {
+        padding: 0;
+        width: auto;
+    }
+}
+
+.more-content {
+    background-color: $cerulean-50;
+    height: 230px;
+    margin-bottom: -50px;
+    a {
+        @include paragraphtitle;
+        color: $white;
+        line-height: 45px;
+        margin: auto;
+        &:hover {
+            color: $gray-10;
+        }
+    }
+    .layout-column-child {
+        @include flexbox;
+        align-items: center;
+    }
+    @include breakpoint (sm) {
+        @include flexbox;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.more-content-image {
+    background-image: url(http://pages.github.ibm.com/the-playbook/images/astorplace.jpg);
+    background-position: center;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    flex-grow: 2;
+    height: 230px;
+    @include breakpoint(sm) {
+        display: none;
+    }
+    @include breakpoint(xsm) {
+        display: none;
+    }
+}
+
+.card-container {
+    @include flexbox;
+    @include flex-direction(row);
+    flex-wrap: wrap;
+    margin: 35px 0;
+    margin: auto;
+    padding: 1em 0;
+    @include breakpoint(md) {}
+    @include breakpoint(sm) {
+        @include flex-direction(column);
+    }
+    @include breakpoint(xsm) {
+        @include flex-direction(column);
+    }
+}
+
+.card {
+    @include flex-direction(column);
+    @include flexbox;
+    align-items: center;
+    background-color: $neutralWhite-2;
+    border: solid 1px $gray-10;
+    height: 230px;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    width: 320px;
+    p {
+        line-height: 1.5em;
+        color: $gray-90;
+    }
+    img {
+        height: 45px;
+        margin-bottom: 8px;
+    }
+    .card-header {
+        font-weight: normal;
+        font-family: $helvetica;
+        font-size: 1.4375rem; //paragraphtitle
+        margin: .3em 0;
+        color: $gray-90;
+        text-decoration: none;
+    }
+    a > span {
+        cursor: hand;
+        /* for earlier versions of IE */
+        cursor: pointer;
+        /* for, I think, IE 7+ and FF etc. */
+    }
+    &:hover {
+        background-color: $neutralWhite-4;
+        border-color: $gray-30;
+    }
+    @include breakpoint(sm) {
+        margin: auto;
+    }
+}
+
+//// Footer template/components/_footer.scss

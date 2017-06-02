@@ -1,0 +1,57 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// May 2017 -- Approved Color Palette by Jennifer Sukis (jsukis@us.ibm.com) and Jenny Sanchez (chsanche@us.ibm.com)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$helvetica: HelvNeueLightforIBM, 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, roboto, san francisco, 'Lucida Grande', sans-serif; 
+$consolas: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+// $eliott: release end of 2017
+
+$body: 1rem;
+$small: .875rem;
+
+@mixin title {
+    font-family: $helvetica;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+@mixin subtitle {
+    font-family: $helvetica;
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 1.5em;
+}
+
+@mixin paragraphtitle {
+    font-family: $helvetica;
+    font-size: 1.4375rem;
+    font-weight: normal;
+    line-height: 1.5em;
+    padding-bottom: .5em;
+}
+
+////////////////////////
+// Classes 
+////////////////////////
+
+
+////////////////////////
+// Scale 
+////////////////////////
+
+// 11px .6875rem
+// 12px .750rem
+// * 14px .875rem
+// * 16px 1rem
+// 18px 1.125rem
+// 20px 1.25rem
+// * 23px 1.4375rem
+// 26px 1.635rem
+// 29px 1.8125rem
+// 32px 1.8125rem
+// * 36px 2.25rem
+// 44px 2.75rem
+// 48px 3rem
+// 52px 3.25rem
+// * 56px 3.5rem

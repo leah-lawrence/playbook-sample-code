@@ -1,0 +1,64 @@
+@mixin breakpoint($point) {
+    @if ($point==lg) {
+        @media (min-width: 1000px) {
+            @content
+        }
+    }
+    @else if ($point==md) {
+        @media (min-width: 480px) and (max-width: 999px) {
+            @content
+        }
+    }
+    @else if ($point=sm) {
+        @media (max-width: 479px) {
+            @content
+        }
+    }
+}
+
+//.class  {
+//  @include breakpoint(sm){
+//    width: 60%;
+//  }
+//}
+
+////////////////////////
+// Flexbox 
+//////////////////////// 
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;    
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-direction($value: row) {
+    @if $value==row-reverse {
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: horizontal;
+        -moz-box-direction: reverse;
+        -moz-box-orient: horizontal;
+    }
+    @else if $value==column {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -moz-box-direction: normal;
+        -moz-box-orient: vertical;
+    }
+    @else if $value==column-reverse {
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: vertical;
+        -moz-box-direction: reverse;
+        -moz-box-orient: vertical;
+    }
+    @else {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -moz-box-orient: horizontal;
+    }
+    -webkit-flex-direction: $value;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}

@@ -1,0 +1,120 @@
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// May 2017 -- Approved Color Palette by Jennifer Sukis (jsukis@us.ibm.com) and Jenny Sanchez (chsanche@us.ibm.com)
+// Colors are from the IBM Design Language https://www.ibm.com/design/language/resources/color-library/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////
+// Cognitive Moment
+//////////////////////////////
+
+$hello-watson: #9753e1;
+
+//////////////////////////////
+// Alert Palette
+//////////////////////////////
+
+$success: #34bc6e; 
+$warning: #fed500; 
+$error: #e6232;
+
+//////////////////////////////
+// Full Watson Color Palette
+//////////////////////////////
+
+// Cerulean
+$cerulean-1: #deedf7;
+$cerulean-10: #c2dbf4;
+$cerulean-20: #95c4f3;
+$cerulean-30: #56acf2;
+$cerulean-40: #009bef;
+$cerulean-50: #047cc0;
+$cerulean-60: #175d8d;
+$cerulean-70: #1c496d;
+$cerulean-80: #1d364d;
+$cerulean-90: #1b2834;
+
+// Teal
+$teal-1: #c0f5e8;
+$teal-10: #8ee9d4;
+$teal-20: #40d5bb;
+$teal-30: #00baa1;
+$teal-40: #00a78f;
+$teal-50: #008673;
+$teal-60: #006456;
+$teal-70: #124f44;
+$teal-80: #133a32;
+$teal-90: #122b26;
+
+// Green
+$green-1: #cef3d1;
+$green-10: #89eda0;
+$green-20: #57d785;
+$green-30: #34bc6e;
+$green-40: #00aa5e;
+$green-50: #00884b;
+$green-60: #116639;
+$green-70: #12512e;
+$green-80: #123b22;
+$green-90: #112c1b;
+
+// Lime
+$lime-1: #d7f4bd;
+$lime-10: #b4e876;
+$lime-20: #95d13c;
+$lime-30: #81b532;
+$lime-40: #73a22c;
+$lime-50: #5b8121;
+$lime-60: #426200;
+$lime-70: #374c1a;
+$lime-80: #283912;
+$lime-90: #1f2a10;
+
+// Magenta
+$magenta-1: #f5e7eb;
+$magenta-10: #f5cedb;
+$magenta-20: #f7aac3;
+$magenta-30: #f87eac;
+$magenta-40: #ff509e;
+$magenta-50: #dc267f;
+$magenta-60: #a91560;
+$magenta-70: #831b4c;
+$magenta-80: #5d1a38;
+$magenta-90: #401a29;
+
+// Violet
+$violet-1: #ece8f5; 
+$violet-10: #e2d2f4; 
+$violet-20: #d2b5f0; 
+$violet-30: #bf93eb; 
+$violet-40: #b07ce8; 
+$violet-50: #9753e1; 
+$violet-60: #7732bb; 
+$violet-70: #602797; 
+$violet-80: #44216a; 
+$violet-90: #321c4c;
+
+// Gray
+$gray-1: #eaeaea;
+$gray-10: #d8d8d8;
+$gray-20: #c0bfc0;
+$gray-30: #a6a5a6;
+$gray-40: #949394;
+$gray-50: #777677;
+$gray-60: #595859;
+$gray-70: #464646;
+$gray-80: #343334;
+$gray-90: #272727;
+
+// Neutral-white
+$neutralWhite-1: #fcfcfc; 
+$neutralWhite-2: #f9f9f9;
+$neutralWhite-3: #f6f6f6;
+$neutralWhite-4: #f3f3f3;
+
+// Black and White
+$black: #000;
+$white: #fff;
+
+// Gradient
+$gradient: linear-gradient(to left, $teal-50, $cerulean-70);
